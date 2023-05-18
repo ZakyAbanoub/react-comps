@@ -1,29 +1,20 @@
-import Accordion from "./components/Accordion";
-
-const items = [
-  {
-    id: 1,
-    label: "Can I use Angular ?",
-    content:
-      "Yes you can use Angular, but you have know TypeScript before using it.",
-  },
-  {
-    id: 2,
-    label: "Can I use React on a project?",
-    content: "You can use React on any project you want!",
-  },
-  {
-    id: 3,
-    label: "What about Vue?",
-    content: "Vue is a JavaScript Framework that it easy to learn and use",
-  },
-];
+import { useState } from "react";
+import Dropdown from "./components/Dropdown";
 
 const App = () => {
+  const [selection, setSelection] = useState(null);
+
+  const handleSelection = (option) => {
+    setSelection(option);
+  };
+
+  const options = [
+    { label: "Red", value: 0 },
+    { label: "Green", value: "green" },
+    { label: "Blue", value: "blue" },
+  ];
   return (
-    <>
-      <Accordion items={items} />
-    </>
+    <Dropdown options={options} value={selection} onChange={handleSelection} />
   );
 };
 
