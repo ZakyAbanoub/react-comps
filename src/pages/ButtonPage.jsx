@@ -8,15 +8,13 @@ const ButtonPage = () => {
   return (
     <>
       <div>
-        <Button className="mb-5" primary outline onClick={handleClick}>
+        <Button primary outline onClick={handleClick}>
           <GoBell />
           Hello!
         </Button>
       </div>
       <div>
-        <Button className="mt-5" secondary>
-          Buy Now!
-        </Button>
+        <Button secondary>Buy Now!</Button>
       </div>
       <div>
         <Button>Sea Deal!</Button>

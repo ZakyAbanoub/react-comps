@@ -30,7 +30,6 @@ const Button = ({
       "text-yello-400": outline && warning,
     })
   );
-  console.log(classes);
   return (
     <button {...rest} className={classes}>
       {children}
