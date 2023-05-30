@@ -5,6 +5,7 @@ const LINKS = [
   { label: "Accordion", path: "/accordion" },
   { label: "Buttons", path: "/button" },
   { label: "Modals", path: "/modal" },
+  { label: "Table", path: "/table" },
 ];
 
 const Sidebar = () => {
